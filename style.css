@@ -1,6 +1,14 @@
 * {
     box-sizing: border-box;
 }
-h1{
+a{
     background-color: brown ;
+    border: 2px solid grey;
+    margin: 15px;
+    display: inline-block;
+}
+h1{
+    color:greenyellow;
+    text-align: center;
+    border: 10px dotted blue;
 }
