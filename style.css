@@ -1,14 +1,44 @@
-* {
+:root
+{
+    
+    --text-color: #fff;
+    --padding-val: 1rem;
+}
+{
     box-sizing: border-box;
 }
-a{
-    background-color: brown ;
-    border: 2px solid grey;
-    margin: 15px;
-    display: inline-block;
+header{
+   height: 100vh; 
+   color: yellowgreen;
+   background: url("./BGimg.jpg") no-repeat center;
+
+   /* background-image: url("./BGimg.jpg");
+   background-repeat: no-repeat;
+   background-position: center; */
+   background-attachment: scroll;
+   background-size: cover;
+   color:var(--text-color);
+   padding: var(--padding-val);
+    filter: saturate(0);
+
+    /* filter:opacity(0,1); */
+    /*  */
 }
-h1{
-    color:greenyellow;
-    text-align: center;
-    border: 10px dotted blue;
+
+header:hover{
+    
+    filter: saturate(1);
+    /* filter:opacity(1); */
+}
+main{
+    background-color: blue;
+    color:var(--text-color);
+    padding: var(--padding-val);
+
+}
+
+footer{
+    background-color: red;
+    color:var(--text-color);
+    padding: var(--padding-val);
 }
