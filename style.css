@@ -1,58 +1,92 @@
-:root
-{
-    
+:root {
+
     --text-color: #fff;
     --padding-val: 1rem;
 }
-{
+
+* {
     box-sizing: border-box;
 }
-header{
-   height: 100vh; 
-   color: yellowgreen;
-   background: url("./BGimg.jpg") no-repeat center;
 
-   /* background-image: url("./BGimg.jpg");
+header {
+    height: 100vh;
+    color: yellowgreen;
+    background: url("./BGimg.jpg") no-repeat center;
+
+    /* background-image: url("./BGimg.jpg");
    background-repeat: no-repeat;
    background-position: center; */
-   background-attachment: scroll;
-   background-size: cover;
-   color:var(--text-color);
-   padding: var(--padding-val);
+    background-attachment: scroll;
+    background-size: cover;
+    color: var(--text-color);
+    padding: var(--padding-val);
     filter: saturate(0);
 
     /* filter:opacity(0,1); */
     /*  */
 }
 
-header:hover{
-    
+header:hover {
+
     filter: saturate(1);
     /* filter:opacity(1); */
 }
-main{
+
+main {
     background-color: blue;
-    color:var(--text-color);
+    color: var(--text-color);
     padding: var(--padding-val);
 
 }
 
-footer{
+footer {
     background-color: red;
-    color:var(--text-color);
+    color: var(--text-color);
     padding: var(--padding-val);
 }
 
-.skills{
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 
 }
-.card{
-
-}
-
 .card-title{
+    text-align: center;
+}
+.card {
+    width: 25%;
+    background-color: bisque;
+    padding: var(--padding-val);
+    margin: 1rem;
+    color: black;
+    float: left;
 
 }
-.cardbody{
 
+.card:hover {
+
+    box-shadow: 0.2rem 0.2rem 0.8rem rgba(154, 7, 7, 0.5);
+}
+.tutorias{
+    background-color: aqua;
+    text-align: center;
+}
+.tutorias::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.tutorial1{
+    background-color: rgb(188, 197, 23);
+    float: left;
+    width: 34%;
+}.tutorial2{
+    background-color: rgb(13, 132, 72);
+    float: left;
+    width: 33%;
+}.tutorial3{
+    background-color: rgb(52, 6, 48);
+    float: left;
+    width: 33%;
 }
