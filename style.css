@@ -51,11 +51,13 @@ footer {
     display: table;
 
 }
-.card-title{
+
+.card-title {
     text-align: center;
 }
+
 .card {
-    width: 25%;
+    width: 32%;
     background-color: bisque;
     padding: var(--padding-val);
     margin: 1rem;
@@ -64,29 +66,54 @@ footer {
 
 }
 
+.parent {
+    background-color: aqua;
+    height: 20rem;
+    position:relative;
+}
+
+.child {
+    background-color: orange;
+    width: 10rem;
+    position:absolute;
+    top: 2rem;
+    left:2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
 .card:hover {
 
     box-shadow: 0.2rem 0.2rem 0.8rem rgba(154, 7, 7, 0.5);
 }
-.tutorias{
+
+.tutorias {
     background-color: aqua;
     text-align: center;
 }
-.tutorias::after{
+
+.tutorias::after {
     content: "";
     display: table;
     clear: both;
 }
-.tutorial1{
+
+.tutorial1 {
     background-color: rgb(188, 197, 23);
     float: left;
     width: 34%;
-}.tutorial2{
+}
+
+.tutorial2 {
     background-color: rgb(13, 132, 72);
     float: left;
-    width: 34%;
-}.tutorial3{
+    width: 33%;
+}
+
+.tutorial3 {
     background-color: rgb(52, 6, 48);
     float: left;
-    width: 34%;
+    width: 33%;
 }
