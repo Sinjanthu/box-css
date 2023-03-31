@@ -10,10 +10,11 @@
 
 
 .navbar{
-    background-color: blue;
+    background-color: rgb(255, 0, 119);
     position: fixed;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
+    height: 13%;
     z-index: 1;
     width: 100%;
 }
